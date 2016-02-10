@@ -20,7 +20,7 @@ html {
 
 body{
   font-family: sans-serif;
-  @include zero;
+  // @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
   &.noscript .toggle-btn{
@@ -44,23 +44,26 @@ header {
 		padding: 0;
 	}
 	li{
+		background-color: #4B484B;
+		display: block;
 		list-style-type: none;
 		&:first-child a{
-			border-top: 1px solid $light-grey;
+			border-top: 1px solid #FF7963;
 		}
 		a{
 			display: block;
 			text-align: center;
 			padding: .5em 1em;
-			border-bottom: 1px solid $light-grey;
+			border-bottom: 1px solid #FF7963;
 			text-decoration:  none;
+			color: #fff;
 		} 
 	} // li
 } //.navigation
 
 .toggle-btn,
 .close-btn{
-	color: $text-color;
+	color: #FF7963;
 	text-decoration: none;
 	text-decoration: none;
 	height: 40px;
@@ -89,7 +92,7 @@ header {
 //page should move when the nav opens
 // This is the onlytime we will EVER use max width
 
-@media only screen and (max-width: 60em){
+@media only screen and (max-width: 24em){
 	.site-wrapper{
 		position: relative;
 		overflow: hidden;
@@ -100,7 +103,7 @@ header {
 			height: 100%;
 			position: relative;
 			transform: translateX(0);
-			transition: all 300ms ease-in-out;
+			transition: all 210ms ease-in-out;
 		}
 		
 		&[data-state="slide-open"] .sliding-canvas{
@@ -125,12 +128,16 @@ header {
 	
 } //media query
 
-@media only screen and (min-width: 60em){
+@media only screen and (min-width: 24em){
 	.toggle-btn,
 	.close-btn{
 		display: none;
 	}
 	
+	navigation ul a {
+		display: inline-block;
+		float: right;
+	}
 } //media query 
 
 body.noscript .navigation{
