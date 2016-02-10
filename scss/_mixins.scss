@@ -1,8 +1,5 @@
 // Mixins
-@mixin zero{
-  margin: 0;
-  padding: 0;
-}
+
 
 @mixin ease($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
@@ -10,6 +7,21 @@
     -ms-transition: $transition-property $transition-time $method;
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
+}
+
+
+@mixin button($dark-grey){        //⬅︎ The argument passed is in the round brackets
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background: $dark-grey; //⬅︎ It gets used within the mixin here
+  &:hover {
+    background: lighten($bg-color, 8%);
+
+  }         
 }
 
 // Makes an element visually hidden, but accessible.
