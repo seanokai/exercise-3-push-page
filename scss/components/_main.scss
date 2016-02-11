@@ -92,7 +92,7 @@ header {
 //page should move when the nav opens
 // This is the onlytime we will EVER use max width
 
-@media only screen and (max-width: 24em){
+@media only screen and (max-width: 30em){
 	.site-wrapper{
 		position: relative;
 		overflow: hidden;
@@ -128,17 +128,29 @@ header {
 	
 } //media query
 
-@media only screen and (min-width: 24em){
+@media only screen and (min-width: 30em){
 	.toggle-btn,
 	.close-btn{
 		display: none;
 	}
 	
-	navigation ul a {
+	nav li {
 		display: inline-block;
-		float: right;
+		float: left;
 	}
 } //media query 
+
+@media only screen and (min-width: 32em){
+
+	.navigation{
+	ul{
+		padding: 0;
+	}
+	li{
+
+		display: inline-block;
+	}
+}
 
 body.noscript .navigation{
 	postion: static;

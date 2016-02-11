@@ -107,7 +107,7 @@ header {
 /**
 *Sliding navagation
 */
-@media only screen and (max-width: 24em) {
+@media only screen and (max-width: 30em) {
   .site-wrapper {
     position: relative;
     overflow: hidden;
@@ -142,14 +142,14 @@ header {
   }
 }
 
-@media only screen and (min-width: 24em) {
+@media only screen and (min-width: 30em) {
   .toggle-btn,
   .close-btn {
     display: none;
   }
-  navigation ul a {
+  nav li {
     display: inline-block;
-    float: right;
+    float: left;
   }
 }
 
