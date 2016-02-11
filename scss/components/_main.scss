@@ -33,6 +33,11 @@ header {
   position: relative;
 }
 
+.head-color{
+
+	color: #FF7963;
+}
+
 .toggle-btn{
 	position: absolute;
 	right: 1em;
@@ -66,7 +71,7 @@ header {
 	background-color: #FF7963;
 }
 
-.navigation a:hover {
+.hover-nav a:hover {
 
 	background-color: #F79687;
 	color: #4B484B;
@@ -154,6 +159,10 @@ header {
 } //media query 
 
 @media only screen and (min-width: 32em){
+
+	.head-color {
+		color: #4B484B;
+	}
 
 	.navigation{
 	ul{
