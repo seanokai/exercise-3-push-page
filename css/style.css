@@ -73,6 +73,10 @@ header {
   color: #fff;
 }
 
+.navigation .current {
+  background-color: #FF7963;
+}
+
 .toggle-btn,
 .close-btn {
   color: #FF7963;
@@ -150,6 +154,18 @@ header {
   nav li {
     display: inline-block;
     float: left;
+  }
+}
+
+@media only screen and (min-width: 32em) {
+  .navigation ul {
+    padding: 0;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation li:first-child a {
+    border-top: 0px;
   }
 }
 
