@@ -79,6 +79,7 @@ header {
 
 .navigation a:hover {
   background-color: #F79687;
+  color: #4B484B;
 }
 
 .toggle-btn,
